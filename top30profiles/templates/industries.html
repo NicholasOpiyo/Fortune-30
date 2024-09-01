@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'industryi.css' %}"/>
+    <script src="{% static 'indux.js' %}"></script>
+</head>
+<header>
+    <p id="app_name"> Fortune {{ plength }}</p>
+    <nav>
+        <a href="{% url 'initial insights' %}"> Top 30 Companies </a>
+        <a href="{% url 'all industries' %}" id="industries"> Industries </a>
+    </nav>
+</header>
+<body>
+    <p> On this page, you can filter companies by their industry. </p>
+    <form id="fm" action="" method="post">
+        {% csrf_token %}
+        <label> Select an industry: </label>
+        <select id="industry" name="industry">
+            <option id="topbox"> </option>
+            {% for sector in sectors %}
+               <option class="otheroptions">{{ sector }}</option>
+            {% endfor %}
+        </select>
+        <button name="selection" id="selection" onclick="requestIndustry()"> View companies in selected industry </button>
+    </form>
+</body>
+<footer>
+    <h1 id="foot"> Fortune {{ plength }} </h1>
+</footer>
+</html>
