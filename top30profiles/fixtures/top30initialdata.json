@@ -1,0 +1,392 @@
+[
+    {
+        "fields":{
+            "company":"Walmart",
+            "revenue":"648125",
+            "employees": "2100000",
+            "industry":"Discount stores",
+            "headquarters":"Bentonville, Arkansas",
+            "fortune_100_rank":"1",
+            "logo":"walmart.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"0"
+    },
+    {
+        "fields":{
+            "company":"Amazon",
+            "revenue": "574785",
+            "employees": "1525000",
+            "industry": "Internet retail",
+            "headquarters":"Seattle, Washington",
+            "fortune_100_rank":"2",
+            "logo":"amazon.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"1"
+    },
+    {
+        "fields":{
+            "company":"Apple",
+            "revenue": "383285",
+            "employees": "161000",
+            "industry":"Consumer electronics",
+            "headquarters":"Cupertino, California",
+            "fortune_100_rank":"3",
+            "logo":"apple.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"2"
+    },
+    {
+        "fields":{
+            "company":"UnitedHealth Group",
+            "revenue": "371622",
+            "employees": "440000",
+            "industry":"Healthcare plans",
+            "headquarters":"Minnetonka, Delaware",
+            "fortune_100_rank":"4",
+            "logo":"unitedhealth.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"3"
+    },
+    {
+        "fields":{
+            "company":"Berkshire Hathaway",
+            "revenue": "364482",
+            "employees": "396500",
+            "industry":"Insurance",
+            "headquarters":"Omaha, Nebraska",
+            "fortune_100_rank":"5",
+            "logo":"berkshire.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"4"
+    },
+    {
+        "fields":{
+            "company":"CVS Health",
+            "revenue": "357776",
+            "employees": "300000",
+            "industry":"Healthcare plans",
+            "headquarters":"Woonsocket, Rhode Island",
+            "fortune_100_rank":"6",
+            "logo":"cvs.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"5"
+    },
+    {
+        "fields":{
+            "company":"Exxon Mobil",
+            "revenue": "344582",
+            "employees": "61500",
+            "industry":"Oil and gas integrated",
+            "headquarters":"Spring, Texas",
+            "fortune_100_rank":"7",
+            "logo":"exxon.svg" 
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"6"
+    },
+    {
+        "fields":{
+            "company":"Alphabet",
+            "revenue": "307394",
+            "employees": "182381",
+            "industry":"Internet content and information",
+            "headquarters":"Mountain View, California",
+            "fortune_100_rank":"8",
+            "logo":"alphabet.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"7"
+    },
+    {
+        "fields":{
+            "company":"McKesson",
+            "revenue": "276711",
+            "employees": "51000",
+            "industry":"Medical distribution",
+            "headquarters":"Irving, Texas",
+            "fortune_100_rank":"9",
+            "logo":"mckesson.svg" 
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"8"
+    },
+    {
+        "fields":{
+            "company":"Cencora",
+            "revenue": "262173",
+            "employees": "46000",
+            "industry":"Medical distribution",
+            "headquarters":"Conshohocken, Pennsylvania",
+            "fortune_100_rank":"10",
+            "logo":"cencora.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"9"
+    },
+    {
+        "fields":{
+            "company":"Costco",
+            "revenue": "242290",
+            "employees": "316000",
+            "industry":"Discount Stores",
+            "headquarters":"Issaquah, Washington",
+            "fortune_100_rank":"11",
+            "logo":"costco.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"10"
+    },
+    {
+        "fields":{
+            "company":"JPMorgan Chase",
+            "revenue": "239425",
+            "employees": "309926",
+            "industry":"Banks : Diversified",
+            "headquarters":"New York, New York",
+            "fortune_100_rank":"12",
+            "logo":"jpmorgan.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"11"
+    },
+    {
+        "fields":{
+            "company":"Microsoft",
+            "revenue": "211915",
+            "employees": "228000",
+            "industry":"Software : Infrastructure",
+            "headquarters":"Redmond, Washington",
+            "fortune_100_rank":"13",
+            "logo":"microsoft.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"12"
+    },
+    {
+        "fields":{
+            "company":"Cardinal Health",
+            "revenue": "205012",
+            "employees": "48000",
+            "industry":"Medical distribution",
+            "headquarters":"Dublin, Ohio",
+            "fortune_100_rank":"14",
+            "logo":"cardinal.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"13"
+    },
+    {
+        "fields":{
+            "company":"Chevron",
+            "revenue": "200949",
+            "employees": "45600",
+            "industry":"Oil and gas integrated",
+            "headquarters":"San Ramon, California",
+            "fortune_100_rank":"15",
+            "logo":"chevron.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"14"
+    },
+    {
+        "fields":{
+            "company":"Cigna Group",
+            "revenue": "195265",
+            "employees": "72500",
+            "industry":"Healthcare plans",
+            "headquarters":"Bloomfield, Connecticut",
+            "fortune_100_rank":"16",
+            "logo":"cigna.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"15"
+    },
+    {
+        "fields":{
+            "company":"Ford Motor",
+            "revenue": "176191",
+            "employees": "177000",
+            "industry":"Auto manufacturing",
+            "headquarters":"Dearborn, Michigan",
+            "fortune_100_rank":"17",
+            "logo":"ford.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"16"
+    },
+    {
+        "fields":{
+            "company":"Bank of America",
+            "revenue": "171912",
+            "employees": "213000",
+            "industry":"Banks",
+            "headquarters":"Charlotte, North Carolina",
+            "fortune_100_rank":"18",
+            "logo":"bank.svg" 
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"17"
+    },
+    {
+        "fields":{
+            "company":"General Motors",
+            "revenue": "171842",
+            "employees": "163000",
+            "industry":"Auto manufacturing",
+            "headquarters":"Detroit, Michigan",
+            "fortune_100_rank":"19",
+            "logo":"general.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"18"
+    },
+    {
+        "fields":{
+            "company":"Elevance Health",
+            "revenue": "171340",
+            "employees": "104900",
+            "industry":"Healthcare plans",
+            "headquarters":"Indianapolis, Indiana",
+            "fortune_100_rank":"20",
+            "logo":"elevance.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"19"
+    },
+    {
+        "fields":{
+            "company":"Citigroup",
+            "revenue": "156820",
+            "employees": "239000",
+            "industry":"Banks",
+            "headquarters":"New York, New York",
+            "fortune_100_rank":"21",
+            "logo":"citigroup.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"20"
+    },
+    {
+        "fields":{
+            "company":"Centene",
+            "revenue": "153999",
+            "employees": "67000",
+            "industry":"Healthcare plans",
+            "headquarters":"Saint Louis, Missouri",
+            "fortune_100_rank":"22",
+            "logo":"centene.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"21"
+    },
+    {
+        "fields":{
+            "company":"Home Depot",
+            "revenue": "152669",
+            "employees": "463100",
+            "industry":"Home improvement retail",
+            "headquarters":"Atlanta, Georgia",
+            "fortune_100_rank":"23",
+            "logo":"home.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"22"
+    },
+    {
+        "fields":{
+            "company":"Marathon Petroleum",
+            "revenue": "150307",
+            "employees": "18200",
+            "industry":"Oil and gas refining and marketing",
+            "headquarters":"Findlay, Ohio",
+            "fortune_100_rank":"24",
+            "logo":"marathon.svg" 
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"23"
+    },
+    {
+        "fields":{
+            "company":"Kroger",
+            "revenue": "150039",
+            "employees": "414000",
+            "industry":"Grocery stores",
+            "headquarters":"Cincinnati, Ohio",
+            "fortune_100_rank":"25",
+            "logo":"kroger.svg" 
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"24"
+    },
+    {
+        "fields":{
+            "company":"Philips 66",
+            "revenue": "149890",
+            "employees": "14000",
+            "industry":"Oil and gas refining and marketing",
+            "headquarters":"Houston, Texas",
+            "fortune_100_rank":"26",
+            "logo":"philips.svg" 
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"25"
+    },
+    {
+        "fields":{
+            "company":"Fannie Mae",
+            "revenue": "141240", 
+            "employees": "8100",
+            "industry":"Mortgage finance", 
+            "headquarters":"Washington, DC",
+            "fortune_100_rank":"27",
+            "logo":"fannie.svg" 
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"26"
+    },
+    {
+        "fields":{
+            "company":"Walgreens Boots Alliance",
+            "revenue": "139081",
+            "employees": "331000",
+            "industry":"Pharmaceutical retailers", 
+            "headquarters":"Deerfield, Illinois",
+            "fortune_100_rank":"28",
+            "logo":"walgreens.svg" 
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"27"
+    },
+    {
+        "fields":{
+            "company":"Valero Energy",
+            "revenue": "139001",
+            "employees": "9908",
+            "industry":"Oil and gas refining and marketing",
+            "headquarters":"San Antonio, Texas",
+            "fortune_100_rank":"29",
+            "logo":"valero.svg" 
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"28"
+    },
+    {
+        "fields":{
+            "company":"Meta Platforms",
+            "revenue": "134902",
+            "employees": "67317",
+            "industry":"Internet content and information",
+            "headquarters":"Menlo Park, California",
+            "fortune_100_rank":"30",
+            "logo":"meta.svg"
+        },
+        "model":"top30profiles.InitialInsights",
+        "pk":"29"
+    }
+]
