@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'industryi.css' %}"/>
+    <script src="{% static 'indux.js' %}"></script>
+</head>
+<header>
+    <p id="app_name"> Fortune {{ plength }}</p>
+    <nav>
+        <a href="{% url 'initial insights' %}"> Top 30 Companies </a>
+        <a href="{% url 'all industries' %}" id="industries"> Industries </a>
+    </nav>
+</header>
+<body>
+    {% if slength == 1 %}
+    <p> The top {{ plength }} of the 2024 Fortune 100 features {{ slength }} company
+        from the '{{ sector }}' industry.  </p>
+    {% else %}
+    <p> The top {{ plength }} of the 2024 Fortune 100 features {{ slength }} companies
+        from the '{{ sector }}' industry.  </p>
+    {% endif %}
+    <div class="all_companies">
+        {% for company in companies %}
+        <div class="company"> 
+            <div class="company_id">
+                {% if company.logo == 'images/iac.svg' %}
+                    <p> {{ company.company }}* </p> 
+                    {% load static %}
+                    {% with image=company.logo  %}
+                      <img src = "{% static image %}" alt="logo">
+                    {% endwith %}
+                    <p id="nologo"> *Real logo unavailable </p>
+                {% else %}
+                    <p> {{ company.company }} </p> 
+                    {% load static %}
+                    {% with image=company.logo  %}
+                      <img src = "{% static image %}" alt="logo">
+                    {% endwith %}
+                {% endif %}
+            </div>
+            <div class="vertical_line"></div>
+            <div class="company_size">
+                <p> Revenue: {{ company.revenue }} </p> 
+                <p> Employees: {{ company.employees }} </p> 
+                <p> Headquarters: {{ company.headquarters }} </p> 
+                <p> 2024 Fortune rank: {{ company.rank }} </p>
+            </div>
+        </div>
+        {% endfor %} 
+</div>
+<form id="fm" action="" method="post">
+    {% csrf_token %}
+    <label> Select a different industry: </label>
+    <select id="industry" name="industry">
+        <option id="topbox"> </option>
+        {% for sector in sectors %}
+        <option class="otheroptions">{{ sector }}</option>
+        {% endfor %}
+    </select>
+    <button name="selection" id="selection" onclick="requestIndustry()"> View companies from selected industry </button>
+</form>
+</body>
+<footer>
+    <h1 id="foot"> Fortune {{ plength }} </h1>
+</footer>
+</html>
