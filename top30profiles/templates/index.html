@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'indhx.css' %}"/>
+</head>
+<header>
+    <p id="app_name"> Fortune {{ plength }}</p>
+    <nav>
+        <a href="{% url 'initial insights' %}"> Top 30 Companies </a>
+        <a href="{% url 'all industries' %}" id="industries"> Industries </a>
+    </nav>
+</header>
+<body>
+    <h1 id="main"> About </h1>
+    <p id="readme"> 
+        This Django app profiles the top {{ plength }} of the 2024 Fortune 100 companies. 
+        It profiles them by their sizes, which are assessed in terms of revenue and number of employees.
+        Each company's profile also has the location of its headquarters and <a href="{% url 'all industries' %}">industry</a>. 
+        The stated revenues are the revenues as at late July 2024, the time of the release of the 2024 Fortune 500 list. Some companies'
+        logos are not publicly available in a suitable format, and IAC's logo has been used in place of these
+        companies' logos. IAC is Fortune Magazine's immediate ex-parent company.
+    </p>
+    <h1 id="pmain"> Top {{ plength }} Fortune Firms</h1>
+    <div class="all_companies">
+            {% for company in profiles.values %}
+            <div class="company"> 
+                <div class="company_id">
+                    {% if company.logo == 'images/iac.svg' %}
+                    <p> {{ company.company }}* </p> 
+                    {% load static %}
+                    {% with image=company.logo  %}
+                      <img src = "{% static image %}" alt="logo">
+                    {% endwith %}
+                    <p id="nologo"> *Real logo unavailable </p>
+                    {% else %}
+                    <p> {{ company.company }} </p> 
+                    {% load static %}
+                    {% with image=company.logo  %}
+                      <img src = "{% static image %}" alt="logo">
+                    {% endwith %}
+                    {% endif %}
+                </div>
+                <div class="vertical_line"></div>
+                <div class="company_size">
+                    <p> Revenue: {{ company.revenue }} </p> 
+                    <p> Employees: {{ company.employees }} </p> 
+                    <p> Industry: {{ company.industry }} </p> 
+                    <p> Headquarters: {{ company.headquarters }} </p> 
+                    <p> 2024 Fortune rank: {{ company.rank }} </p>
+                </div>
+            </div>
+            {% endfor %} 
+    </div>
+</body>
+<footer>
+<h1 id="foot"> Fortune {{ plength }} </h1>
+</footer>
+</html>
